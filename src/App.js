@@ -1,13 +1,19 @@
+import Dictionary from "./Dictionary";
+import "./App.css";
 
-import './App.css';
 
 export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      <div className="container">
+        <header className="App-header">
+          <i className="fa-solid fa-spell-check fa-2xl App-logo"></i>
+        </header>
+        <main>
+          <Dictionary />
+        </main>
+        <footer className="App-footer"><small>Coded by Viv and is Open-sourced</small></footer>
+      </div>
     </div>
   );
 }
-
