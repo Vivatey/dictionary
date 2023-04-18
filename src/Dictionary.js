@@ -8,8 +8,8 @@ export default function Dictionary() {
   let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
-    console.log(response.data[0].meanings[0].definitions[0].definition);
+    // console.log(response.data[0]);
+    // console.log(response.data[0].meanings[0].definitions[0].definition);
     setResults(response.data[0]);
   }
 
@@ -27,7 +27,7 @@ export default function Dictionary() {
 
   function handleKeywordChange(event) {
     event.preventDefault();
-    console.log(event.target.value);
+    // console.log(event.target.value);
     setKeyword(event.target.value);
   }
 
