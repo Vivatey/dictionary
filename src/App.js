@@ -8,6 +8,7 @@ export default function App() {
       <div className="container">
         <header className="App-header">
           <i className="fa-solid fa-spell-check fa-2xl App-logo"></i>
+          <h1>Dictionary</h1>
         </header>
         <main>
           <Dictionary />
