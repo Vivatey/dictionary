@@ -14,7 +14,7 @@ export default function Dictionary(props) {
     setResults(response.data[0]);
   }
 
-  function handlePexelsResponse(response) { 
+  function handlePexelsResponse(response) {
     console.log(response.data);
     setPhotos(response.data.photos);
   }
@@ -25,11 +25,9 @@ export default function Dictionary(props) {
 
     axios.get(apiUrl).then(handleDictionResponse);
 
-    let pexelsApiKey =
-      "e8t47038af810df0bb6dd6e04ac3o3b1";
+    let pexelsApiKey = "e8t47038af810df0bb6dd6e04ac3o3b1";
 
     let pexelsApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${pexelsApiKey}`;
-
 
     axios.get(pexelsApiUrl).then(handlePexelsResponse);
 
