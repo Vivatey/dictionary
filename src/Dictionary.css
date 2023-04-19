@@ -1,0 +1,40 @@
+.Dictionary section {
+  background: white;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 60px 0;
+}
+
+.Dictionary h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.Dictionary input {
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.Dictionary .hint {
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+@media (max-width: 400px) {
+  .Dictionary h1 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .Dictionary section {
+    padding: 15px;
+  }
+}
